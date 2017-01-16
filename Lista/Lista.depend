@@ -12,3 +12,16 @@
 	<string.h>
 	"Lista.h"
 
+1484586086 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Lista/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Lista.h"
+
+1484579292 /home/samuel/Área de Trabalho/Estrutura_de_Dados/Lista/Lista.h
+
+1484586162 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Lista/Lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+

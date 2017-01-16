@@ -48,12 +48,14 @@ int insere_lista_fim(Lista lista, tipo_elemento elemento){
 int insere_lista_posicao(Lista lista, tipo_elemento elemento, int posicao){
     if(!lista) return -1;
 
-    if(posicao < 0 || posicao > lista->tamanho) return -2;
+    if(posicao <= 0 || posicao > lista->tamanho) return -2;
+
+    if(posicao == 1) return insere_lista_inicio(lista,elemento);
 
     if(!lista->inicio) return insere_lista_inicio(lista,elemento);
 
     tipo_nodo *no = (tipo_nodo*) malloc(sizeof(tipo_nodo)),
-    *aux = lista->inicio;
+    *aux = lista->inicio, *aux1;
 
     if(!no) return 1;
 
@@ -63,23 +65,22 @@ int insere_lista_posicao(Lista lista, tipo_elemento elemento, int posicao){
     int pecorrido = 1;
 
     while(aux->prox){
-        if(pecorrido < (posicao-1)){
+        if(pecorrido < posicao){
+            aux1 = aux;
             aux = aux->prox;
         }else break;
         pecorrido++;
     }
 
-    no->prox = aux->prox;
-    aux->prox = no;
+    no->prox = aux;
+    aux1->prox = no;
     lista->tamanho++;
 
     return 0;
 }
 
 int remove_lista_inicio(Lista lista, tipo_elemento* elemento){
-    if(!lista) return -1;
-
-    if(!lista->inicio) return 1;
+    if(!lista || !lista->inicio) return -1;
 
     tipo_nodo *aux = lista->inicio;
     lista->inicio = aux->prox;
@@ -90,7 +91,7 @@ int remove_lista_inicio(Lista lista, tipo_elemento* elemento){
 }
 
 int remove_lista_posicao(Lista lista, tipo_elemento* elemento, int posicao){
-    if(!lista) return -1;
+    if(!lista || !lista->inicio) return -1;
 
     if(posicao < 0 || posicao > lista->tamanho) return -2;
 

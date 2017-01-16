@@ -42,7 +42,7 @@ int main()
     exibe_lista(l);
 
     e.chave=13615650638;
-    insere_lista_posicao(l,e,4);
+    insere_lista_posicao(l,e,6);
     exibe_lista(l);
 
     remove_lista_posicao(l,&e,6);
