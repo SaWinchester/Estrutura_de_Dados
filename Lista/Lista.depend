@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1484580456 source:/home/samuel/Área de Trabalho/Fila/Lista/Lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1484579292 /home/samuel/Área de Trabalho/Fila/Lista/Lista.h
+
+1484580501 source:/home/samuel/Área de Trabalho/Fila/Lista/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Lista.h"
+
