@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1484672767 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Fila/Fila.c
+	<stdio.h>
+	<stdlib.h>
+	"Fila.h"
+
+1484671891 /home/samuel/Área de Trabalho/Estrutura_de_Dados/Fila/Fila.h
+
+1484672478 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Fila/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Fila.h"
+
