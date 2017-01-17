@@ -45,7 +45,7 @@ int main()
     insere_lista_posicao(l,e,6);
     exibe_lista(l);
 
-    remove_lista_posicao(l,&e,6);
+    remove_lista_posicao(l,&e,1);
     exibe_lista(l);
 
     termina_lista(l);

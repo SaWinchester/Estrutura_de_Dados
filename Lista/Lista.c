@@ -95,6 +95,10 @@ int remove_lista_posicao(Lista lista, tipo_elemento* elemento, int posicao){
 
     if(posicao < 0 || posicao > lista->tamanho) return -2;
 
+    if(posicao == 1) return remove_lista_inicio(lista,elemento);
+
+    //if(posicao == lista->tamanho) return remove_lista_final(lista,elemento);
+
     tipo_nodo *aux = lista->inicio, *aux1;
     int pecorrido = 1;
 

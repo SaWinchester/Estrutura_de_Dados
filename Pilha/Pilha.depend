@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1484668481 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Pilha/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+
+1484668493 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Pilha/Pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+
+1484668038 /home/samuel/Área de Trabalho/Estrutura_de_Dados/Pilha/Pilha.h
+
