@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1484846539 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Arvore_Binaria/Arvore.c
+	<stdlib.h>
+	<stdio.h>
+	"Arvore.h"
+
+1484842836 /home/samuel/Área de Trabalho/Estrutura_de_Dados/Arvore_Binaria/Arvore.h
+
+1484846535 source:/home/samuel/Área de Trabalho/Estrutura_de_Dados/Arvore_Binaria/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Arvore.h"
+
