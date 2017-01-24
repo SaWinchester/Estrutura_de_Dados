@@ -60,11 +60,9 @@ int exclui_arvore(Apontador *raiz,tipo_elemento *elemento){
     return -1;
 }
 
-/*Pensa uma solução melhor.
-  Perde a referencia da raiz... quaso a folha tenha mais de 1 filho.
 int exclui_arvore_sem_recursao(Apontador *raiz,tipo_elemento *elemento){
-    Apontador *p = raiz,*aux;
-
+    Apontador *p,*aux;
+    p = raiz;
     while(*p){
         if(elemento->chave > (*p)->info.chave) p = &(*p)->direita;
         else if(elemento->chave < (*p)->info.chave) p = &(*p)->esquerda;
@@ -81,12 +79,13 @@ int exclui_arvore_sem_recursao(Apontador *raiz,tipo_elemento *elemento){
                     *p = (*p)->esquerda;
 
                 }
-            //free(aux);
+                free(aux);
+
         }else return -1;
     }
 
     return 0;
-}*/
+}
 
 void in_ordem(Apontador raiz){
     if(raiz){

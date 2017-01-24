@@ -43,7 +43,7 @@ int main()
     in_ordem(p);
 
     printf("\n\nAltura = %d\n\n",altura(p));
-    printf("\n\Numero de Nos = %d\n\n",numero_nos(p));
+    printf("\n\nNumero de Nos = %d\n\n",numero_nos(p));
 
     Apontador b = cria_arvore();
     e.chave = 40;
@@ -78,6 +78,9 @@ int main()
 
     e.chave = 13;
     insere_arvore(&b,e);
+
+    e.chave = 25;
+    exclui_arvore_sem_recursao(&b,&e);
 
     in_ordem(b);
 
